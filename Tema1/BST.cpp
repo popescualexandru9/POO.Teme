@@ -3,10 +3,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-/*
- constructor(int *p) : p(p){};
-*/
-
 class nod
 {
 	friend class BST;
