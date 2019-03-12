@@ -1,0 +1,28 @@
+Se consideră un program care descrie organizarea personalului unei instituţii folosid clase derivate. O clasă numită Angajat deţine date şi funcţii referitoare la un angajat al instituţiei:
+
+class Angajat{
+char * nume;
+float salariu;
+public:
+Angajat();
+~Angajat();
+Angajat(char *n, float sal);
+Angajat(Angajat& r);
+void display();
+float getSalariu();
+void setSalariu(float s);
+};
+
+Diferite categorii de angajaţi necesită date suplimentare faţă de cele definite în clasa Angajat, corespunzătoare postului pe care îl deţin. De exemplu, un şef de secţie (administator) este un angajat (deci sunt necesare toate datele care descriu această calitate) dar mai sunt necesare şi alte informaţii, de exemplu precizare secţiei pe care o conduce. Un administrator este un angajat, de aceea clasa Administrator se poate construi prin derivare din clasa Angajat astfel:
+
+class Administrator : public Angajat {
+int sectie;
+public:
+Administrator(const char *n, float sal, int sec);
+Administrator(Administrator& r);
+~Administrator();
+};
+Sa se implementeze aceasta ierarhie de clase.
+
+Clasele derivate trebuie sa contina constructori parametrizati prin care sa se evidentieze transmiterea parametrilor catre constructorul din clasa de baza si destructori
+
