@@ -54,9 +54,9 @@ matrice::matrice()
 	n = vec.getSize();
 	std::cout << "Numarul liniilor : ";
 	std::cin >> m;
-	p = (int**)malloc(m * sizeof(int*));
+	p = new int *[m];
 	for (int i = 0; i < m; i++)
-		p[i] = (int*)malloc(n * sizeof(int));
+		p[i] = new int[n];
 
 	for (int i = 0; i < m; i++)
 		for (int j = 0; j < n; j++)
