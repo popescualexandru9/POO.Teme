@@ -1,6 +1,5 @@
-#ifndef MATRICE_H
-#define MATRICE_H
-#pragma once
+#ifndef HEADER
+#define HEADER
 
 class nod
 {
