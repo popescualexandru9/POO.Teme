@@ -55,7 +55,7 @@ array::array(const array& obj)
 
 array::~array()
 {
-	if (state == false)
+	if (state == true)
 		delete a;
 }
 
